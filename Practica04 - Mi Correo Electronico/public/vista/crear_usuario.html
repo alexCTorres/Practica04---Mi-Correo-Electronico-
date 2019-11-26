@@ -1,0 +1,54 @@
+<!DOCTYPE html> 
+<html> 
+    <head> 
+    <meta charset="UTF-8"> 
+    <link href="../../css/styles.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="../../javaScript/validaciones.js"> </script>
+</head> 
+<body> 
+    
+    <h1>CREACION DE UN USUARIO</h1>
+<form id="formulario01" method="POST" action="../controladores/crear_usuario.php" onsubmit="return validarCamposObligatorios()"> 
+    
+<label for="cedula">Cedula (*)</label> 
+<input type="text" id="cedula" name="cedula" value="" placeholder="Ingrese el número de cedula ..."  onchange="validarCedula()" onkeypress="return validarNumeros(event)" maxlength="10">
+<br> 
+
+<label for="nombres">Nombres (*)</label> 
+<input type="text" id="nombres" name="nombres" value="" placeholder="Ingrese minimo un nombre ..."  onkeypress=" return validarLetras(event)" onchange="validarNombre()" /> 
+<br> 
+
+<label for="apellidos">Apelidos (*)</label> 
+<input type="text" id="apellidos" name="apellidos" value="" placeholder="Ingrese minimo un apellido..." onkeypress=" return validarLetras(event)" onchange="validarApellido()">
+ <br> 
+
+ <label for="rol">Rol (*)</label> 
+<input type="text" id="rol" name="rol" value="" placeholder="Inhgrese admin/user..." required/>
+ <br> 
+ 
+ <label for="direccion">Dirección (*)</label> 
+ <input type="text" id="direccion" name="direccion" value="" placeholder="Ingrese su dirección ..."  onkeypress=" return validarLetrasNumeros(event)" onchange="validarDireccion()">
+<br> 
+
+<label for="telefono">Teléfono (*)</label> 
+<input type="text" id="telefono" name="telefono" value="" placeholder="Ingrese su número telefónico ..."   onkeypress="return validarNumeros(event)" onchange="validarTelefono()" maxlength="10">
+<br> 
+
+<label for="fecha">Fecha Nacimiento (*)</label> 
+<input type="date" id="fechaNacimiento" name="fechaNacimiento" value=""  placeholder="Ingrese una fecha con formato dd/mm/yyyy..." onkeypress="return validarFechaNumeros(event)" onchange="validarFecha()" maxlength="10">
+<br> 
+
+<label for="correo">Correo electrónico (*)</label> 
+<input type="email" id="correo" name="correo" value=""  placeholder= "usuario@ups.edu.ec/est.ups.edu.ec..." onkeypress="return validarLetrasCorreo(event)" onchange="validarCorreo()">
+<br> 
+
+<label for="correo">Contraseña (*)</label> 
+<input type="password" id="contrasena" name="contrasena" value="" placeholder="Min 8 caracteres, 1 May, 1 Min y 1 caracter especial (@,_,$)..." onkeypress="return validarLetrasContrasena(event)" onchange="validarContrasena()">
+<br> 
+
+<input type="submit" id="crear" name="crear" value="Aceptar" /> 
+<input type="reset" id="cancelar" name="cancelar" value="Cancelar" /> 
+</form> 
+
+</body> 
+</html>

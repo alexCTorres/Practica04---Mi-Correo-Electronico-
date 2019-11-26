@@ -1,0 +1,61 @@
+<!DOCTYPE html> 
+<html> 
+    <head> 
+    <meta charset="UTF-8"> 
+    <link href="../../css/styles.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="../../javaScript/validaciones.js"> </script>
+</head> 
+<body> 
+    
+    <h1>
+        CREACION DE UNA REUNION
+    </h1>
+    
+<form id="formulario01" method="POST" action="../controladores/crearReunion.php"> 
+    
+<label for="fecha">Fecha (*)</label> 
+<input type="date" id="fecha" name="fecha" value="" placeholder="Ingrese la fecha de la reunion... " 
+required/> 
+<br> 
+
+<label for="hora">Hora (*)</label> 
+<input type="text" id="hora" name="hora" value="" placeholder="Ingrese hora de la reunion ..."
+ required/>
+ <br> 
+
+ <label for="lugar">Lugar (*)</label> 
+<input type="text" id="lugar" name="lugar" value="" placeholder="Inhgrese lugar de la reunion..."
+ required/>
+ <br> 
+ 
+ <label for="coordenadas">Coordenadas (*)</label> 
+ <input type="text" id="coordenadas" name="coordenadas" value="" placeholder="Ingrese las coordenadas ..."
+required/> 
+<br> 
+
+<label for="remitente">Remitente (*)</label> 
+<input type="text" id="remitente" name="remitente" value="" placeholder="Ingrese el remitente de la reunion ..." 
+required/> 
+<br> 
+
+<label for="invitados">Invitados (*)</label> 
+<input type="text" id="invitados" name="invitados" value="" placeholder="Ingrese los invitados ..." 
+required/> 
+<br> 
+
+<label for="motivo">Motivo (*)</label> 
+<input type="text" id="motivo" name="motivo" value="" placeholder="Ingrese el motivo de la reunion ..." 
+required/> 
+<br> 
+
+<label for="observaciones">Observaciones (*)</label> 
+<input type="text" id="observaciones" name="observaciones" value="" placeholder="Ingrese observaciones ..." 
+required/> 
+<br> 
+
+<input type="submit" id="crear" name="crear" value="Aceptar" /> 
+<input type="reset" id="cancelar" name="cancelar" value="Cancelar" /> 
+</form> 
+
+</body> 
+</html>
